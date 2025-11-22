@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -13,10 +14,40 @@ yarn dev
 pnpm dev
 # or
 bun dev
+=======
+# Sustainovate
+
+A Next.js web application focused on sustainability initiatives and environmental awareness.
+
+## Features
+
+- Event management system
+- Leaderboard tracking
+- Domain-specific pages
+- Modern UI with responsive design
+
+## Tech Stack
+
+- Next.js
+- React
+- CSS3
+
+## Getting Started
+
+First, install the dependencies:
+```bash
+npm install
+```
+
+Then, run the development server:
+```bash
+npm run dev
+>>>>>>> b5389a4eb0bfc65b8e6583f72f28c8952b21e919
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+<<<<<<< HEAD
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
@@ -45,3 +76,17 @@ To run the next js sustainovate static website do the following steps:
 4. Select the localhost
 5. Your website can be viewed in localhost in your browser
 >>>>>>> 9fdca8b28b36528c162b76a5f6d5e3bd58e28862
+=======
+## Project Structure
+
+- `/src/app` - Main application pages and routing
+- `/src/app/domains` - Domain-specific features
+- `/src/app/events` - Event management
+- `/src/app/leaderboard` - Leaderboard functionality
+- `/public` - Static assets (images, icons)
+- `/components` - Reusable React components
+
+## License
+
+Private
+>>>>>>> b5389a4eb0bfc65b8e6583f72f28c8952b21e919
