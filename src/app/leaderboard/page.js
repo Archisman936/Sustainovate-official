@@ -9,80 +9,7 @@ const LeaderboardPage = () => {
   const [rankFilter, setRankFilter] = useState('all');
   const [isLoading, setIsLoading] = useState(false);
 
-  const leaderboardData = [
-    {
-      rank: 1,
-      name: "Aarav Shah",
-      username: "@aarav",
-      points: 4120,
-      badge: "Gold",
-      avatar: "A",
-      nextRank: 300,
-      isCurrentUser: false,
-      level: "Champion",
-      achievements: 12
-    },
-    {
-      rank: 2,
-      name: "Mia Chen",
-      username: "@miac",
-      points: 3985,
-      badge: "Silver",
-      avatar: "M",
-      nextRank: 635,
-      isCurrentUser: false,
-      level: "Expert",
-      achievements: 10
-    },
-    {
-      rank: 3,
-      name: "Liam Patel",
-      username: "@liamp",
-      points: 3720,
-      badge: "Bronze",
-      avatar: "L",
-      nextRank: 400,
-      isCurrentUser: true,
-      level: "Expert",
-      achievements: 9
-    },
-    {
-      rank: 4,
-      name: "Zara Khan",
-      username: "@zarak",
-      points: 3350,
-      badge: null,
-      avatar: "Z",
-      nextRank: 1270,
-      isCurrentUser: false,
-      level: "Advanced",
-      achievements: 7
-    },
-    {
-      rank: 5,
-      name: "Noah Singh",
-      username: "@noah",
-      points: 3210,
-      badge: null,
-      avatar: "N",
-      nextRank: 1410,
-      isCurrentUser: false,
-      level: "Advanced",
-      achievements: 6
-    },
-    {
-      rank: 6,
-      name: "Olivia Das",
-      username: "@olivia",
-      points: 2975,
-      badge: null,
-      avatar: "O",
-      nextRank: 1645,
-      isCurrentUser: false,
-      level: "Intermediate",
-      achievements: 5
-    }
-  ];
+  const leaderboardData = [];
 
   const filteredData = leaderboardData.filter(user => {
     const searchMatch = user.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -293,7 +220,7 @@ const LeaderboardPage = () => {
                       ))
                     ) : (
                       <div className="bg-white p-8 sm:p-12 rounded-xl border-2 border-gray-200 text-center">
-                        <p className="text-sm sm:text-base text-gray-500">No users found matching your search</p>
+                        <p className="text-4xl sm:text-5xl md:text-6xl font-black text-black">Coming Soon.....</p>
                       </div>
                     )}
                   </div>

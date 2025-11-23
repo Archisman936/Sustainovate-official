@@ -22,44 +22,7 @@ const EventsPage = () => {
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [isLoading, setIsLoading] = useState(false);
 
-  const events = [
-    {
-      id: 1,
-      title: "Campus Sustainability Workshop",
-      date: "2025-11-25",
-      duration: "3 hours",
-      fee: "Free",
-      status: "upcoming",
-      tags: ["Workshop", "Education"],
-      category: "Education",
-      participants: 45,
-      description: "Learn practical sustainability techniques for campus life"
-    },
-    {
-      id: 2,
-      title: "Green Tech Innovation Fair",
-      date: "2025-12-02",
-      duration: "1 day",
-      fee: "$10",
-      status: "upcoming",
-      tags: ["Innovation", "Technology"],
-      category: "Technology",
-      participants: 120,
-      description: "Showcase of sustainable technology solutions"
-    },
-    {
-      id: 3,
-      title: "Zero Waste Challenge",
-      date: "2025-11-20",
-      duration: "Ongoing",
-      fee: "Free",
-      status: "present",
-      tags: ["Challenge", "Community"],
-      category: "Challenge",
-      participants: 89,
-      description: "Join our month-long zero waste initiative"
-    }
-  ];
+  const events = [];
 
   const filteredEvents = events.filter(event => {
     const statusMatch = statusFilter === 'all' || event.status === statusFilter;
@@ -283,7 +246,7 @@ const EventsPage = () => {
                       ))
                     ) : (
                       <div className="bg-white p-8 sm:p-12 rounded-xl border-2 border-gray-200 text-center">
-                        <p className="text-sm sm:text-base text-gray-500">No events found matching your filters</p>
+                        <p className="text-4xl sm:text-5xl md:text-6xl font-black text-black">Coming Soon.....</p>
                       </div>
                     )}
                   </div>
